@@ -7,7 +7,7 @@ var version = '1.0.1';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("to !help", { type:"LISTENING"})
+  client.user.setActivity("Listening to !help", { type:"CUSTOM_STATUS"})
 });
 
 client.on('message', message =>{
