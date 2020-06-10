@@ -7,6 +7,7 @@ var version = '1.0.1';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  bot.user.setactivity("!help")
 });
 
 client.on('message', message =>{
