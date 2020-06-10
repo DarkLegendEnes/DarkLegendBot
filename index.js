@@ -7,7 +7,7 @@ var version = '1.0.1';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity('Listening to !help', { type:"CUSTOM_STATUS"})
+  client.user.setActivity('!help', { type:"LISTENING"})
 });
 
 client.on('message', message =>{
@@ -27,7 +27,7 @@ client.on('message', message =>{
         break;
         case 'help':
             const embed2 = new Discord.MessageEmbed()
-            .addField('Commands', `bot's commands are: ping, help, info. note: bot is under construction`)
+            .addField('Commands', `bot's commands are: ping, help, info, kick. note: bot is under construction`)
             .setColor(0xE20C40)
             message.channel.send(embed2);
         break;    
