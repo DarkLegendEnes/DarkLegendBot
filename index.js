@@ -36,7 +36,7 @@ client.on('message', message =>{
         break; 
 
         case 'kick':
-            if(!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You don\'t have permissions.');
+            if(!message.member.hasPermission("KICK_MEMBERS", explicit = true)) return message.channel.send('You don\'t have permissions.');
             
             if(!args[1]) message.channel.send('You have to specify a person')
 
