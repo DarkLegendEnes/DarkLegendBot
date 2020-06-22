@@ -58,7 +58,6 @@ client.on('message', message =>{
             } else {
                 message.reply("That user isn\'t in this server") 
             }
-
             break;
             
 
