@@ -61,6 +61,10 @@ client.on('message', message =>{
 
             break;
 
+            case 'hi':
+            message.channel.send(`hello ${user.tag}`);
+        break; 
+
             
     }
 });
