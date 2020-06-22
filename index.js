@@ -27,7 +27,8 @@ client.on('message', message =>{
         break;
         case 'help':
             const embed2 = new Discord.MessageEmbed()
-            .addField('Commands', `bot's commands are: ping, help, info, kick. note: bot is under construction`)
+            .addField('Commands', `bot's commands are: ping, help, info, kick. note: bot is under construction
+            this bot was made for the almighty hendrin`)
             .setColor(0xE20C40)
             message.channel.send(embed2);
         break;    
