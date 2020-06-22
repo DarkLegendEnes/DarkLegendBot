@@ -61,7 +61,7 @@ client.on('message', message =>{
 
             break;
 
-            case 'hi':
+        case 'hi':
             message.reply(`hello ${user.tag}`);
         break; 
 
