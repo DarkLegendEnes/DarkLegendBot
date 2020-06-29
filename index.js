@@ -71,7 +71,7 @@ client.on('message', message =>{
             break;
 
         case 'avatar':
-            message.channel.send(message.mentions.displayAvatarURL());
+            message.channel.send(Discord.MessageMentions.displayAvatarURL());
         break;
 
             
