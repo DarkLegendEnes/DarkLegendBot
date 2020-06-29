@@ -70,6 +70,10 @@ client.on('message', message =>{
             message.channel.bulkDelete(args[1]);
             break;
 
+        case 'avatar':
+            message.reply(message.author.displayAvatarURL());
+        break;
+
             
     }
 });
