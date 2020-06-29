@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 const prefix = '!';
 
-var version = '1.0.1';
+var version = 'V27';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
