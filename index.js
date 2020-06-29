@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 const prefix = '!';
 
-var version = 'V29';
+var version = 'V30';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -71,7 +71,7 @@ client.on('message', message =>{
             break;
 
         case 'avatar':
-            message.reply(message.author.displayAvatarURL());
+            message.channel.send(message.author.displayAvatarURL());
         break;
 
             
