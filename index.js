@@ -12,7 +12,7 @@ client.on('ready', () => {
 
 client.on('message', message =>{
 
-    let args = message.content.substring(prefix.length).split(/ +/);
+    let args = message.content.slice(prefix.length).split(/ +/);
 
     switch(args[0]){
         case 'info':
@@ -63,6 +63,12 @@ client.on('message', message =>{
         case 'asksd':
             message.channel.send('Cole is a good boy');
         break; 
+        
+        case 'clear':
+            if(!message.member.hasPermission("MANAGE_MESSAGES", explicit = true)) return message.channel.send('You don\'t have permissions.');
+            if(!args[1]) return message.reply('Error please specify amount')
+            message.channel.bulkDelete(args[1]);
+            break;
 
             
     }
