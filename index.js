@@ -73,8 +73,7 @@ client.on('message', message =>{
         case 'Slaztic':
             message.channel.send("Slaztic is my god")
         break;
-
-            
+           
     }
 });
 
