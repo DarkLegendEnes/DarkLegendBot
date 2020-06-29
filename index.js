@@ -70,10 +70,6 @@ client.on('message', message =>{
             message.channel.bulkDelete(args[1]);
             break;
 
-        case 'avatar':
-            message.channel.send(message.author.displayAvatarURL());
-        break;
-
         case 'Slaztic':
             message.channel.send("Slaztic is my god")
         break;
