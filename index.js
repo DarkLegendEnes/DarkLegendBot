@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 const prefix = '!';
 
-var version = 'V27';
+var version = 'V28';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -60,8 +60,8 @@ client.on('message', message =>{
             }
             break;
             
-        case 'asksd':
-            message.channel.send('Cole is a good boy');
+        case 'air':
+            message.channel.send('Air is my master');
         break; 
         
         case 'clear':
