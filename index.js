@@ -11,7 +11,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message =>{
-    let args = message.content.slice(prefix.length).split(" ")
+    let args = message.content.slice(prefix.length).split(/ +/);
+    
     switch(args[0]){
         case 'info':
             const embed = new Discord.MessageEmbed()
