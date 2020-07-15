@@ -70,10 +70,11 @@ client.on('message', message =>{
             message.channel.bulkDelete(args[1]);
             break;
 
-        case 'Slaztic':
-            message.channel.send("Slaztic is my god")
+        case 'sylke':
+            message.channel.send('Sylke is a bitch, wait no not a bitch she ain\'t loyal. She belong to the streets');
         break;
-           
+        
+        
     }
 });
 
