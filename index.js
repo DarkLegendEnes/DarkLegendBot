@@ -7,7 +7,6 @@ var version = 'V31';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity('!help' , { type: 'LISTENING'})
 });
 
 client.on('message', message =>{
@@ -60,9 +59,6 @@ client.on('message', message =>{
             }
             break;
             
-        case 'air':
-            message.channel.send('Air is my master');
-        break; 
         
         case 'clear':
             if(!message.member.hasPermission("MANAGE_MESSAGES", explicit = true)) return message.channel.send('You don\'t have permissions.');
